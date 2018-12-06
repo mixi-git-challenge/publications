@@ -4,3 +4,4 @@ plugins:
   - 'jekyll-twitter-plugin'
 repository: mixi-git-challenge/publications
 destination: docs
+baseurl: publications
