@@ -5,3 +5,5 @@ plugins:
 repository: mixi-git-challenge/publications
 destination: docs
 baseurl: publications
+exclude:
+  - dev
