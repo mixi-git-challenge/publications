@@ -7,3 +7,4 @@ destination: docs
 baseurl: publications
 exclude:
   - dev
+lang: ja-JP
