@@ -8,6 +8,8 @@ destination: docs
 baseurl: publications
 exclude:
   - dev
+include:
+  - .nojekyll
 lang: ja-JP
 
 title: git challenge publications
