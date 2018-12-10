@@ -1,0 +1,19 @@
+theme: jekyll-theme-primer
+encding: utf-8
+plugins:
+  - 'jekyll-twitter-plugin'
+  - 'jekyll-seo-tag'
+repository: mixi-git-challenge/publications
+destination: docs
+baseurl: publications
+exclude:
+  - dev
+lang: ja-JP
+
+title: git challenge publications
+twitter:
+  username: hr_mixi
+  card: summary_large_image
+
+readme_index:
+  with_frontmatter: true
