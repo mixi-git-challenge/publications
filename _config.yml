@@ -14,3 +14,6 @@ title: git challenge publications
 twitter:
   username: hr_mixi
   card: summary_large_image
+
+readme_index:
+  with_frontmatter: true

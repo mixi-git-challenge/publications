@@ -1,3 +1,7 @@
+---
+image: /images/git-challenge.jpg
+---
+
 # mixi GROUP presents 「git challenge」
 
 gitリポジトリに設けられた難題に挑む、競技型技術ワークショップイベント
