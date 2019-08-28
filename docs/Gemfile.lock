@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/benbalter/jekyll-readme-index.git
+  remote: https://github.com/benbalter/jekyll-readme-index.git
   revision: 2776d76c15c7d755011b553d0e67f824985c870b
   ref: 2776d76c15
   specs:
@@ -7,7 +7,7 @@ GIT
       jekyll (~> 3.0)
 
 GIT
-  remote: git://github.com/matsubara0507/github-pages-gem.git
+  remote: https://github.com/matsubara0507/github-pages-gem.git
   revision: 716212540203a1ef7ed8be0de11e78ad7dd75200
   ref: twitter-plugin
   specs:
@@ -66,7 +66,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.5.2)
+    addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     coffee-script (2.4.1)
       coffee-script-source
@@ -75,28 +75,28 @@ GEM
     colorator (1.1.0)
     commonmarker (0.17.13)
       ruby-enum (~> 0.5)
-    concurrent-ruby (1.1.3)
-    dnsruby (1.61.2)
+    concurrent-ruby (1.1.5)
+    dnsruby (1.61.3)
       addressable (~> 2.5)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    ethon (0.11.0)
+    ethon (0.12.0)
       ffi (>= 1.3.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
-    ffi (1.9.25)
+    ffi (1.11.1)
     forwardable-extended (2.6.0)
-    gemoji (3.0.0)
+    gemoji (3.0.1)
     github-pages-health-check (1.8.1)
       addressable (~> 2.3)
       dnsruby (~> 1.60)
       octokit (~> 4.0)
       public_suffix (~> 2.0)
       typhoeus (~> 1.3)
-    html-pipeline (2.9.1)
+    html-pipeline (2.12.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
     http_parser.rb (0.6.0)
@@ -120,9 +120,9 @@ GEM
     jekyll-coffeescript (1.1.1)
       coffee-script (~> 2.2)
       coffee-script-source (~> 1.11.1)
-    jekyll-commonmark (1.2.0)
+    jekyll-commonmark (1.3.1)
       commonmarker (~> 0.14)
-      jekyll (>= 3.0, < 4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-commonmark-ghpages (0.1.5)
       commonmarker (~> 0.17.6)
       jekyll-commonmark (~> 1)
@@ -199,7 +199,7 @@ GEM
     jekyll-titles-from-headings (0.5.1)
       jekyll (~> 3.3)
     jekyll-twitter-plugin (2.0.0)
-    jekyll-watch (2.1.2)
+    jekyll-watch (2.2.1)
       listen (~> 3.0)
     jemoji (0.10.1)
       gemoji (~> 3.0)
@@ -212,37 +212,37 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.4.0)
     minima (2.5.0)
       jekyll (~> 3.5)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.11.3)
-    multipart-post (2.0.0)
-    nokogiri (1.8.5)
-      mini_portile2 (~> 2.3.0)
-    octokit (4.13.0)
+    multipart-post (2.1.1)
+    nokogiri (1.10.4)
+      mini_portile2 (~> 2.4.0)
+    octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
     rb-fsevent (0.10.3)
-    rb-inotify (0.9.10)
-      ffi (>= 0.5.0, < 2)
+    rb-inotify (0.10.0)
+      ffi (~> 1.0)
     rouge (2.2.1)
     ruby-enum (0.7.2)
       i18n
     ruby_dep (1.5.0)
-    rubyzip (1.2.2)
-    safe_yaml (1.0.4)
-    sass (3.7.2)
+    rubyzip (1.2.3)
+    safe_yaml (1.0.5)
+    sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sawyer (0.8.1)
-      addressable (>= 2.3.5, < 2.6)
-      faraday (~> 0.8, < 1.0)
+    sawyer (0.8.2)
+      addressable (>= 2.3.5)
+      faraday (> 0.8, < 2.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
@@ -250,7 +250,7 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    unicode-display_width (1.4.0)
+    unicode-display_width (1.6.0)
 
 PLATFORMS
   ruby
@@ -260,4 +260,4 @@ DEPENDENCIES
   jekyll-readme-index!
 
 BUNDLED WITH
-   1.17.1
+   1.17.2
