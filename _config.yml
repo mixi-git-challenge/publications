@@ -8,6 +8,8 @@ destination: docs
 baseurl: publications
 exclude:
   - dev
+  - Gemfile
+  - Gemfile.lock
 include:
   - .nojekyll
 lang: ja-JP
