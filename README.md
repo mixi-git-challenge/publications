@@ -24,6 +24,14 @@ git を使ったことがある皆さん、実力を試してみませんか？
 
 ## Latest News:
 
+### 第12回大会を開催します！
+
+2019年10月26日(土)に git challenge#12 を開催します！
+
+[git challenge#12 の応募方法や詳細はこちら](https://mixi-recruit.snar.jp/jobboard/detail.aspx?id=VcHJZYzSTDE)
+
+※応募(エントリーシート提出)〆切は10/06(日) 23:59まで！
+
 ### 第11回大会を開催しました！
 
 区切りとなる第10回大会終えましたが、これからも git challenge は続きます！
@@ -66,6 +74,14 @@ git を使ったことがある皆さん、実力を試してみませんか？
 - 他の人に薦めたいと思える非常に楽しいイベントでした.
 
 ## Links
+
+### git challenge の新しい採点システムについて紹介した記事です (その１)
+
+- [ギッチャレの新しい採点システム その１ - mixi developers - Medium](https://medium.com/mixi-developers/7b9387059366)
+
+### 第10回で行ったことなどを記事にしました
+
+- [git challenge 第10回に向けて+終えて - mixi developers - Medium](https://medium.com/mixi-developers/575d02a6602)
 
 ### 第9回開催記念インタビュー： 1年目エンジニア社員が語る git challenge の面白さとは？
 
