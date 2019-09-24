@@ -1,0 +1,33 @@
+name: GitHub Pages CD
+
+on: [push]
+
+jobs:
+  build:
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+      on:
+        push:
+          paths:
+          - '*'
+          - '!/docs/*'
+    - uses: actions/setup-ruby@v1
+      with:
+        version: 2.6.x
+    - name: bundle install
+      run: bundle install
+    - name: jekyll build
+      run: bundle exec jekyll build
+    - name: deploy
+      use: docker://buildpack-deps:18.04-scm
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        GIT_NAME: Bot
+        GIT_EMAIL: example@example.com
+      run: bash .github/scripts/deploy.bash
+      on:
+        push:
+          branches:    
+            - master
