@@ -28,7 +28,9 @@ git を使ったことがある皆さん、実力を試してみませんか？
 
 2019年10月26日(土)に git challenge#12 を開催します！
 
-[git challenge#12 の応募方法や詳細はこちら](https://mixi-recruit.snar.jp/jobboard/detail.aspx?id=VcHJZYzSTDE)
+~~[git challenge#12 の応募方法や詳細はこちら](https://mixi-recruit.snar.jp/jobboard/detail.aspx?id=VcHJZYzSTDE)~~
+
+募集は終了しました。
 
 ※応募(エントリーシート提出)〆切は10/06(日) 23:59まで！
 
