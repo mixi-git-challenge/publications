@@ -26,7 +26,7 @@ jobs:
       with:
         ruby-version: 2.6.3
     - name: bundle install
-      run: bundle install
+      run: bundle install --jobs 4 --retry 3 --path vendor/bundle
     - name: jekyll build
       run: bundle exec jekyll build
       env:
