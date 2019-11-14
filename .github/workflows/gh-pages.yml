@@ -11,6 +11,7 @@ on:
 
 jobs:
   build:
+    runs-on: [ubuntu-18.04]
     steps:
     - uses: actions/checkout@v1
       with:
@@ -26,11 +27,7 @@ jobs:
         JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
     - name: deploy
       if: github.ref == 'refs/heads/master'
-      use: docker://buildpack-deps:18.04-scm
-      env:
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        GIT_NAME: Bot
-        GIT_EMAIL: example@example.com
+      uses: docker://buildpack-deps:18.04-scm
       env:
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         GIT_NAME: Bot
