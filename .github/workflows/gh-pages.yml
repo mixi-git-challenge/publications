@@ -11,26 +11,29 @@ on:
 
 jobs:
   build:
+    runs-on: [ubuntu-18.04]
     steps:
     - uses: actions/checkout@v1
       with:
         fetch-depth: 1
+    - uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gem-
     - uses: actions/setup-ruby@v1
       with:
-        version: 2.6.x
+        ruby-version: 2.6.3
     - name: bundle install
-      run: bundle install
+      run: bundle install --jobs 4 --retry 3 --path vendor/bundle
     - name: jekyll build
       run: bundle exec jekyll build
       env:
         JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
     - name: deploy
       if: github.ref == 'refs/heads/master'
-      use: docker://buildpack-deps:18.04-scm
-      env:
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        GIT_NAME: Bot
-        GIT_EMAIL: example@example.com
+      uses: docker://buildpack-deps:18.04-scm
       env:
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         GIT_NAME: Bot
