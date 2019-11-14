@@ -7,6 +7,7 @@ on:
     - master
     paths-ignore:
     - "docs/**"
+    - "dev/**"
 
 jobs:
   build:
@@ -22,7 +23,7 @@ jobs:
     - name: jekyll build
       run: bundle exec jekyll build
       env:
-        JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
     - name: deploy
       if: github.ref == 'refs/heads/master'
       use: docker://buildpack-deps:18.04-scm
