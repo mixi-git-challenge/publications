@@ -24,7 +24,7 @@ jobs:
           ${{ runner.os }}-gem-
     - uses: actions/setup-ruby@v1
       with:
-        version: 2.6.x
+        ruby-version: 2.6.3
     - name: bundle install
       run: bundle install
     - name: jekyll build
