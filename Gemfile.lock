@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/benbalter/jekyll-readme-index.git
+  remote: git://github.com/benbalter/jekyll-readme-index.git
   revision: 2776d76c15c7d755011b553d0e67f824985c870b
   ref: 2776d76c15
   specs:
@@ -7,7 +7,7 @@ GIT
       jekyll (~> 3.0)
 
 GIT
-  remote: https://github.com/matsubara0507/github-pages-gem.git
+  remote: git://github.com/matsubara0507/github-pages-gem.git
   revision: 716212540203a1ef7ed8be0de11e78ad7dd75200
   ref: twitter-plugin
   specs:
@@ -66,8 +66,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.6.0)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -75,7 +75,7 @@ GEM
     colorator (1.1.0)
     commonmarker (0.17.13)
       ruby-enum (~> 0.5)
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.1.6)
     dnsruby (1.61.3)
       addressable (~> 2.5)
     em-websocket (0.5.1)
@@ -85,9 +85,9 @@ GEM
       ffi (>= 1.3.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
-    faraday (0.15.4)
+    faraday (1.0.0)
       multipart-post (>= 1.2, < 3)
-    ffi (1.11.1)
+    ffi (1.12.2)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
     github-pages-health-check (1.8.1)
@@ -96,7 +96,7 @@ GEM
       octokit (~> 4.0)
       public_suffix (~> 2.0)
       typhoeus (~> 1.3)
-    html-pipeline (2.12.0)
+    html-pipeline (2.12.3)
       activesupport (>= 2)
       nokogiri (>= 1.4)
     http_parser.rb (0.6.0)
@@ -217,23 +217,24 @@ GEM
       jekyll (~> 3.5)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (5.11.3)
+    minitest (5.14.0)
     multipart-post (2.1.1)
-    nokogiri (1.10.4)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
-    octokit (4.14.0)
+    octokit (4.16.0)
+      faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
     rb-fsevent (0.10.3)
-    rb-inotify (0.10.0)
+    rb-inotify (0.10.1)
       ffi (~> 1.0)
     rouge (2.2.1)
     ruby-enum (0.7.2)
       i18n
     ruby_dep (1.5.0)
-    rubyzip (1.2.3)
+    rubyzip (2.2.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -248,9 +249,9 @@ GEM
     thread_safe (0.3.6)
     typhoeus (1.3.1)
       ethon (>= 0.9.0)
-    tzinfo (1.2.5)
+    tzinfo (1.2.6)
       thread_safe (~> 0.1)
-    unicode-display_width (1.6.0)
+    unicode-display_width (1.6.1)
 
 PLATFORMS
   ruby
